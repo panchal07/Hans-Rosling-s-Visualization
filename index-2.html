@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 2 - Hans Rosling's Visualization</title>
+  <style>
+    svg {
+      background: white;
+    }
+    div {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div name='headings'>
+    <h1> Hans Rosling's Visualization </h1>
+    <p> Jiawei Wang jwang96@uab.edu </p>
+  </div>
+  <div id="svg_chart">
+  </div>
+  <div name="control-panel">
+
+    <p>Number of points: <input min=0 max=214 value=0 type="range" id="slider"></p>
+    <select id="continentselector">
+      <option value="all" selected>All</option>
+      <option value="asia">Asia</option>
+      <option value="europe">Europe</option>
+      <option value="africa">Africa</option>
+      <option value="americas">Americas</option>
+    </select>
+    <button onclick="play()" id="animate" value="Play">Play</button>
+  </div>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <!-- change this if you have a different location-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
